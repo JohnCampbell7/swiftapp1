@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ4-cS-W8g">
-                                <rect key="frame" x="168.5" y="70" width="38" height="21"/>
+                                <rect key="frame" x="169" y="70" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,30 +34,50 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iui-JQ-SZI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh9-Ha-5dZ">
-                                <rect key="frame" x="62" y="197" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="secondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abb-Lc-giN"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leg-Ix-Bor">
+                                <rect key="frame" x="138" y="163" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eHp-8O-pC6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvj-p3-5hy">
+                                <rect key="frame" x="138" y="226" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EnA-sh-God"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kQ4-cS-W8g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="0sC-eR-pSr"/>
+                            <constraint firstItem="leg-Ix-Bor" firstAttribute="top" secondItem="xWw-cf-FX7" secondAttribute="bottom" constant="22" id="Cjq-hO-Jt9"/>
+                            <constraint firstItem="leg-Ix-Bor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EYe-WB-FMb"/>
                             <constraint firstItem="xWw-cf-FX7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ICF-Ld-MdE"/>
+                            <constraint firstItem="qvj-p3-5hy" firstAttribute="top" secondItem="leg-Ix-Bor" secondAttribute="bottom" constant="33" id="Pcs-9V-Dph"/>
                             <constraint firstItem="kQ4-cS-W8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcN-Av-xfI"/>
+                            <constraint firstItem="leg-Ix-Bor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vag-pF-xsW"/>
+                            <constraint firstItem="leg-Ix-Bor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gVq-8S-6Nt"/>
                             <constraint firstItem="xWw-cf-FX7" firstAttribute="top" secondItem="kQ4-cS-W8g" secondAttribute="bottom" constant="20" id="msv-lr-mSm"/>
+                            <constraint firstItem="leg-Ix-Bor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p0F-wT-G1h"/>
+                            <constraint firstItem="leg-Ix-Bor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="va6-l0-CO0"/>
+                            <constraint firstItem="qvj-p3-5hy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vj9-XZ-4zn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="leg-Ix-Bor" id="TdV-FG-dz7"/>
+                        <outlet property="text2" destination="qvj-p3-5hy" id="mEl-ju-21R"/>
                         <outlet property="theLabel" destination="kQ4-cS-W8g" id="6QV-LA-C0v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-886" y="9"/>
+            <point key="canvasLocation" x="-1382" y="37"/>
         </scene>
     </scenes>
 </document>
